@@ -1,6 +1,26 @@
-{{mEntry.datecreated|time}}|{{mEntry.submittedby}}|{{mEntry.author}}
-<button type="button" name="button" (click)="upVoteFunction()">VoteUp</button>
+<!-- {{mEntry.datecreated|time}}|{{mEntry.submittedby}}|{{mEntry.author}}
+<button type="button" name="button" class="btn btn-default" (click)="upVoteFunction()"
+aria-label="Left Align" >VoteUp</button>
+  <span class="glyphicon glyphicon-chevron-up-align-left" aria-hidden="true"></span>
 {{upVoteString}}
 
 <button type="button" name="button" (click)="downVoteFunction()">VoteDown</button>
+{{downVoteString}}
+
+
+
+
+<!-- <button type="button" class="btn btn-default" aria-label="Left Align">
+  <span class="glyphicon glyphicon-align-left" aria-hidden="true"></span>
+</button>
+
+<button type="button" class="btn btn-default btn-lg">
+  <span class="glyphicon glyphicon-star" aria-hidden="true"></span> Star
+</button> -->
+ -->
+
+<span class="glyphicon glyphicon-triangle-top" (click)='upVoteFunction()' ></span>
+{{upVoteString}}
+
+<span class="glyphicon glyphicon-triangle-bottom" (click)='downVoteFunction()' ></span>
 {{downVoteString}}

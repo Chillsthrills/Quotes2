@@ -9,8 +9,7 @@ import {Entry} from '../entry'
 export class QuoteComponent implements OnInit {
 
   quotes:Entry []=[
-    new Entry("this is a new quote",new Date(),'paul','James'),
-    new Entry('this is a second quote',new Date,'angela',"paul"),
+    new Entry("this is a new quote",new Date(),'',''),
 ]
 
 addnewentry(entry: any){

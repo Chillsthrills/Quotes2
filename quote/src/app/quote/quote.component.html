@@ -5,7 +5,7 @@
 <ul>
 
   <li *ngFor = "let singleQuote of quotes">
-   {{singleQuote.quote}}
+   {{singleQuote.quote}}  {{singleQuote.datecreated}}  {{singleQuote.author}}  {{singleQuote.submittedby}}
    <app-detail [mEntry]='singleQuote'></app-detail>
 
   </li>
