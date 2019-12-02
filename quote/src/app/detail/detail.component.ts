@@ -25,6 +25,8 @@ downVoteFunction(){
 
 }
 
+  @Input() mEntry: Entry;
+
   constructor() { }
 
   ngOnInit() {
