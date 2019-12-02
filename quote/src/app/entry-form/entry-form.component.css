@@ -1,0 +1,39 @@
+.container-fluid {
+  /* background-color: hotpink; */
+  font-family: Arial, Verdana, sans-serif;
+  font-weight: medium;
+  width: 800px !important;
+  height: 900px !important;
+  padding-left: 25px;
+}
+#form-group {
+  margin: 30px 0px 30px 0px !important;
+  /* background-color: blue; */
+  font-size: 24px;
+  width:750px;
+}
+
+ .form-group1, .form-group2, .form-group3{
+  padding-left: 47px !important;
+}
+
+#name1, #name2{
+  padding: 20px 0px 20px 50px !important;
+  text-align: left !important;
+  width: 350px;
+  height: 10px;
+}
+#description{
+  padding: 0px 170px 150px 50px !important;
+  font-style: italic;
+  width: 540px;
+  height: 200px;
+}
+#submitbutton_position{
+  float: right;
+  margin-left: auto;
+}
+  .author, .submittedby, .description {
+  text-align: left;
+  font-size: 18px !important;
+}
