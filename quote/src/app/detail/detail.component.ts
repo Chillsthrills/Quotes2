@@ -13,6 +13,18 @@ export class DetailComponent implements OnInit {
   upVoteString = "";
   downVoteString = "";
 
+  upVoteFunction(){
+  this.upVoteCount = this.upVoteCount + 1;
+  this.upVoteString = ""+this.upVoteCount;
+
+}
+
+downVoteFunction(){
+  this.downVoteCount = this.downVoteCount + 1;
+  this.downVoteString = ""+this.downVoteCount;
+
+}
+
   constructor() { }
 
   ngOnInit() {
