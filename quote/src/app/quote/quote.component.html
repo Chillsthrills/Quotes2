@@ -1,1 +1,12 @@
 <h1>Best Quotes</h1>
+<app-entry-form (mEntry)='addnewentry($event)'></app-entry-form>
+<ul>
+
+  <li *ngFor = "let singleQuote of quotes">
+   {{singleQuote.quote}}
+   <app-detail [mEntry]='singleQuote'></app-detail>
+
+  </li>
+
+
+</ul>
