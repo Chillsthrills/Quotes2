@@ -4,13 +4,15 @@
   font-weight: medium;
   width: 800px !important;
   height: 900px !important;
-  padding-left: 25px;
+  padding-left: 25px !important;
+  margin-left: -190px !important;
+  float: left;
 }
 #form-group {
   margin: 30px 0px 30px 0px !important;
   /* background-color: blue; */
-  font-size: 24px;
-  width:750px;
+  font-size: 24px !important;
+  width:750px !important;
 }
 
  .form-group1, .form-group2, .form-group3{
@@ -19,21 +21,23 @@
 
 #name1, #name2{
   padding: 20px 0px 20px 50px !important;
-  text-align: left !important;
-  width: 350px;
-  height: 10px;
+  text-align: left;
+  width: 650px !important;
+  height: 5px !important;
 }
 #description{
   padding: 0px 170px 150px 50px !important;
   font-style: italic;
-  width: 540px;
-  height: 200px;
+  width: 700px !important;
+  height: 200px !important;
 }
 #submitbutton_position{
-  float: right;
-  margin-left: auto;
+  float: right !important;
+  margin-left: -5px;
+
 }
   .author, .submittedby, .description {
-  text-align: left;
+  text-align: left !important;
   font-size: 18px !important;
+
 }

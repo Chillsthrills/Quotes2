@@ -1,5 +1,7 @@
-<h1>Best Quotes</h1>
-<app-entry-form (mEntry)='addnewentry($event)'></app-entry-form>
+<h1 class="text-center">Quote log</h1>
+<div class="container-fluid">
+  <div class='container'>
+<app-entry-form class = "formUnit" (mEntry)='addnewentry($event)'></app-entry-form>
 <ul>
 
   <li *ngFor = "let singleQuote of quotes">
@@ -8,5 +10,7 @@
 
   </li>
 
-
 </ul>
+
+</div>
+</div>
