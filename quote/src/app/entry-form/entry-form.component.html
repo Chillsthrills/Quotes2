@@ -1,1 +1,29 @@
-<p>entry-form works!</p>
+<div class="container-fluid">
+  <h2 class="text-center">Create a new Goal</h2>
+  <hr>
+    <form (ngSubmit)='addnewentry()' #goalForm='ngForm'>
+      <div class="form-group">
+
+          <label for="name">Author</label>
+          <input type="text" class="form-control" id="name" [(ngModel)]="author" name="author"  required>
+
+      </div>
+
+      <div class="form-group">
+
+          <label for="name">Submitted By</label>
+          <input type="text" class="form-control" id="name" [(ngModel)]="submitted_by" name="submitted_by"  required>
+
+      </div>
+
+      <div class="form-group">
+
+          <label for="description">Quote</label>
+          <textarea class="form-control" id="description" rows="4" [(ngModel)]="new_quote" name="new_quote"  required></textarea>
+
+      </div>
+
+
+      <button type="submit" class="btn btn-success">Add Goal</button>
+  </form>
+</div>
