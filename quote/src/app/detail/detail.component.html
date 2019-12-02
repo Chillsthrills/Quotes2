@@ -1,1 +1,6 @@
-<p>detail works!</p>
+{{mEntry.datecreated|time}}|{{mEntry.submittedby}}|{{mEntry.author}}
+<button type="button" name="button" (click)="upVoteFunction()">VoteUp</button>
+{{upVoteString}}
+
+<button type="button" name="button" (click)="downVoteFunction()">VoteDown</button>
+{{downVoteString}}
