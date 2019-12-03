@@ -1,5 +1,5 @@
 <div class="row">
-  <div class="col-sm-6">
+  <div class="col-vote">
 <div class="upvote">
 <span class="glyphicon glyphicon-triangle-top" (click)='upVoteFunction()'></span>
 </div>
@@ -12,8 +12,8 @@
 {{downVoteString}}
 </div>
 
-<div class="col-sm-6">
- {{mEntry.author}}<br />  {{mEntry.submittedby}}<br /> {{mEntry.datecreated}}
+<div class="col-info">
+ author|{{mEntry.author}}<br />  submitted by|{{mEntry.submittedby}}<br /> date created|{{mEntry.datecreated}}
  </div>
 
  </div>

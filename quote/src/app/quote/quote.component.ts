@@ -8,12 +8,13 @@ import {Entry} from '../entry'
 })
 export class QuoteComponent implements OnInit {
 
-  quotes:Entry []=[
-    new Entry("this is a new quote",new Date(),'',''),
-]
+  quotes:Entry []=[]
 
 addnewentry(entry: any){
   this.quotes.push(entry);
+}
+delete(index){
+  this.quotes.splice(index,1);
 }
 
   constructor() { }

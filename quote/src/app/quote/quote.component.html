@@ -9,12 +9,13 @@
     <h1 class="text"><b>Quote log:</b></h1>
 <ul>
 
-  <li *ngFor = "let singleQuote of quotes">
+  <li *ngFor = "let singleQuote of quotes;let i=index">
     <div class="row">
-      <div class="col-sm">
+      <div class="col-position">
       <q>{{singleQuote.quote}}</q>
       </div>
-      <div class="col-sm">
+      <button (click) ="delete(i)" class="btn">delete</button>
+      <div class="col">
        <app-detail [mEntry]='singleQuote'></app-detail>
        </div>
        </div>

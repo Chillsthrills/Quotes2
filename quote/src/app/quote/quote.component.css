@@ -1,7 +1,3 @@
-.container {
-  /* background-color: blue; */
-
-}
 .container-log {
   /* background-color: hotpink; */
   font-size: 18px;
@@ -11,4 +7,14 @@
 .text-center{
   margin-left: 290px;
   text-decoration: underline;
+}
+.col-position{
+  margin-right: -190px;
+  margin-top: 5px;
+}
+.btn{
+  margin-top: 200px ;
+  margin-right: -50px;
+  background-color: red;
+  font-size: 18px;
 }
