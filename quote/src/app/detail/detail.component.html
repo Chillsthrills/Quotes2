@@ -1,26 +1,19 @@
-<!-- {{mEntry.datecreated|time}}|{{mEntry.submittedby}}|{{mEntry.author}}
-<button type="button" name="button" class="btn btn-default" (click)="upVoteFunction()"
-aria-label="Left Align" >VoteUp</button>
-  <span class="glyphicon glyphicon-chevron-up-align-left" aria-hidden="true"></span>
+<div class="row">
+  <div class="col-sm-6">
+<div class="upvote">
+<span class="glyphicon glyphicon-triangle-top" (click)='upVoteFunction()'></span>
+</div>
+
 {{upVoteString}}
 
-<button type="button" name="button" (click)="downVoteFunction()">VoteDown</button>
+<div class="downvote">
+<span class="glyphicon glyphicon-triangle-bottom" (click)='downVoteFunction()'></span>
+</div>
 {{downVoteString}}
+</div>
 
+<div class="col-sm-6">
+ {{mEntry.author}}<br />  {{mEntry.submittedby}}<br /> {{mEntry.datecreated}}
+ </div>
 
-
-
-<!-- <button type="button" class="btn btn-default" aria-label="Left Align">
-  <span class="glyphicon glyphicon-align-left" aria-hidden="true"></span>
-</button>
-
-<button type="button" class="btn btn-default btn-lg">
-  <span class="glyphicon glyphicon-star" aria-hidden="true"></span> Star
-</button> -->
- -->
-
-<span class="glyphicon glyphicon-triangle-top" (click)='upVoteFunction()' ></span>
-{{upVoteString}}
-
-<span class="glyphicon glyphicon-triangle-bottom" (click)='downVoteFunction()' ></span>
-{{downVoteString}}
+ </div>

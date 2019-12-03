@@ -1,16 +1,24 @@
-<h1 class="text-center">Quote log</h1>
 <div class="container-fluid">
   <div class='container'>
 <app-entry-form class = "formUnit" (mEntry)='addnewentry($event)'></app-entry-form>
+</div>
+</div>
+
+<div class="container-fluid">
+  <div class='container-log'>
+    <h1 class="text"><b>Quote log:</b></h1>
 <ul>
 
   <li *ngFor = "let singleQuote of quotes">
-   {{singleQuote.quote}}  {{singleQuote.datecreated}}  {{singleQuote.author}}  {{singleQuote.submittedby}}
-   <app-detail [mEntry]='singleQuote'></app-detail>
-
-  </li>
-
+    <div class="row">
+      <div class="col-sm">
+      <q>{{singleQuote.quote}}</q>
+      </div>
+      <div class="col-sm">
+       <app-detail [mEntry]='singleQuote'></app-detail>
+       </div>
+       </div>
+   </li>
 </ul>
-
 </div>
 </div>
